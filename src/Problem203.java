@@ -13,14 +13,6 @@
 /*
 思路：建一个虚拟头节点，然后每次遍历下一个，如果下一个的val==val，就将当前指针的下一个指向下一个的下一个；否则当前指针指向下一个
  */
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
-
 public class Problem203 {
     public ListNode removeElements(ListNode head, int val) {
         ListNode dummy_head = new ListNode(0);
